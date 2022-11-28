@@ -26,7 +26,7 @@ int main(int argc,char * argv[]){
   token = strtok(linea, ",");
   while(token != NULL){
     if(Campos == 1){
-      quitaLinea(token);
+      
       campos[i] = strdup(token);
       /*printf("Carga campo %s",token);*/
       token = strtok(NULL, ",");
@@ -61,11 +61,3 @@ char * strdup(char * src){
   return str;
 }
 
-void quitaLinea(char *s) {
-    while (*s) {
-        if (*s == '\n') {
-    *s='\0';
-        }
-        s++;
-    }
-}
