@@ -61,7 +61,7 @@ char * strdup(char * src){
   return str;
 }
 
-voidquitaLinea(char *s) {
+void quitaLinea(char *s) {
     while (*s) {
         if (*s == '\n') {
     *s='\0';
