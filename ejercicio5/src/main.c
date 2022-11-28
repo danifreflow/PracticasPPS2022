@@ -3,7 +3,7 @@
 #define MaxCampos 15 
 
 char * strdup(char * src);
-void quitaLinea(char * s);
+
 
 int main(int argc,char * argv[]){
   /*declaracion de variables*/
