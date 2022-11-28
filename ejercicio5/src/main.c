@@ -2,7 +2,7 @@
 #define MaxLinea 2048
 #define MaxCampos 15 
 
-char * strdup(char * src);
+
 
 
 int main(int argc,char * argv[]){
@@ -27,7 +27,7 @@ int main(int argc,char * argv[]){
   while(token != NULL){
     if(Campos == 1){
       
-      campos[i] = strdup(token);
+      strcpy(campos[i],token);
       /*printf("Carga campo %s",token);*/
       token = strtok(NULL, ",");
       i++;
@@ -51,13 +51,5 @@ int main(int argc,char * argv[]){
   return 0;
 }
 
-char * strdup(char * src){
-  char * str;
-  size_t size = strlen(src)+1;
-  str = malloc(size);
-  if(str){
-    memcpy(str,src,size);
-  }
-  return str;
-}
+
 
