@@ -39,12 +39,16 @@ int main (int argc, char * argv []){
   m =atoi(argv[1]);
   n =atoi(argv[2]);
   matriz = malloc(sizeof(long)*m);
+   if(matriz == NULL){
+    exit(71);
+  }
   for(i=0;i<m;i++){
     matriz[i] =malloc(sizeof(long)*n); 
+    if(matriz[i] == NULL){
+    exit(71);
+    }
   }
-  if(matriz == NULL){
-    r = 71 ;
-  }
+  
   /*parte del codigo que realiza la funcion de las matrices dinamicas*/
   /*primero la rellenamos*/
   for(i =0;i<m;i++){
