@@ -42,7 +42,7 @@ int parser(FILE * file){
    j = i-1; /*cargo en j los datos totales*/
    Bcampos = 0 ; /*ya no es la primera iteracion*/
   }
- */ 
+ 
    i = 0;
   }
   /*fclose(file);*/
