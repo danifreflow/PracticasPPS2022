@@ -38,7 +38,7 @@ int main(int argc,char * argv[]){
       max = 0.00;
       min = 0.00;
   }
-  printf(" %10.2f %10.2f\n",max,min);
+  printf("%10.2f %10.2f\n",max,min);
   fclose(fp);
   return 0;
 }
