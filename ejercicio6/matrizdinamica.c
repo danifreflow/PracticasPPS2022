@@ -29,7 +29,7 @@
  *              1          3         6
  * */
 int main (int argc, char * argv []){
-  int m,n,i,j,r=0; /*m filas , n columans , j e i son para recorrer las matrices*/
+  int m,n,i,j; /*m filas , n columans , j e i son para recorrer las matrices*/
   long ** matriz; /*doble puntero para la matriz*/
   
   /*bucle de creacion de memoria*/
@@ -86,5 +86,5 @@ int main (int argc, char * argv []){
   matriz = NULL;
 
    
-  return r;
+  return 0;
 }
